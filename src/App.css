@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Inter:wght@400;500&family=Kanit:wght@300&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", sans-serif;
+  font-weight: 700;
+  background-color: #130125;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 60px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vw;
+  width: 90%;
+  padding: 0 80px;
+  position: sticky;
+  top: 0;
+  background-color: #130125;
+  z-index: 100;
+  border-bottom: 1px solid #ffffff33;
+}
+
+.hero {
+  border-top: 1px solid #ffffff33;
+  border-bottom: 1px solid #ffffff33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.button {
+  padding: 16px 24px;
+  gap: 10px;
+  background: #fd5a14;
+  border-radius: 2px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ffffff33;
+}
+
+.about-me {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience {
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects-page {
+  height: 180vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contacts {
+  height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 32px;
+}
+
+.footer {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.footer a {
+  color: gray;
+}
+
+.modal-window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.modal-outline {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 100vh; */
+  margin-top: 50px;
+  width: 550px;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #130125;
+}
+
+.modal-content input {
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.modal-content textarea {
+  width: 500px;
+  height: 250px;
+  resize: none;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px;
 }
