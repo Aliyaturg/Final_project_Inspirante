@@ -1,5 +1,5 @@
 import React from "react";
-import myCV from "../assets/CV_Aliya.pdf";
+import myCV from "../assets/CV_Aliya_Turg.pdf";
 
 const Component1 = () => {
   const download = () => {

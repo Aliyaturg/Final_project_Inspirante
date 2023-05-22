@@ -7,9 +7,16 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Component1 from "./components/Component1";
 import Projects from "./components/Projects";
+import React, { useState } from "react";
 
 function App() {
  
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal((prev) => !prev);
+  };
+
   return (
     <div className="App">
       <Header />
@@ -17,7 +24,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
-      <SayHello />
+      <SayHello modal={modal} setModal={setModal} handleModal={handleModal}/>
       <Footer />
     </div>
   );
