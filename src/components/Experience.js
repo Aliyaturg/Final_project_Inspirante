@@ -2,18 +2,18 @@ import React from "react";
 
 const experienceJobs = [
   {
-    year: "March 2022 - ...",
+    year: "November 2022 - curently",
     job: "Intern Developer",
     location: "Company",
     description:
       "Lorem Ipsum Description Text",
   },
   {
-    year: "Sep 2021 - Jan 2022",
-    job: "Intern Developer",
-    location: "Lorem Ipsum Description Text",
+    year: "Aug 2021 - curently",
+    job: "Structural Engineer",
+    location: "Astana, Kazakhstan",
     description:
-      "Lorem Ipsum Description Text",
+      "Designing of working drawings of Reinforced concrete section",
   },
 ];
 

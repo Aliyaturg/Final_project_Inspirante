@@ -14,7 +14,8 @@ const About = () => {
         >
           <h1>About me</h1>
           <p style={{ width: "629px" }}>
-            Hi, I'm Aliya. I build things for the web.
+            Hi, I'm Aliya. I'm beginner Web Developer. 
+
           </p>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -25,7 +26,8 @@ const About = () => {
                 fontWeight: 300,
                 fontSize: "16px",
               }}
-            > I'm software developer and this is my portfolio.
+            > I am a passionate and aspiring web developer with a strong desire to create engaging and user-friendly websites. 
+            With a solid foundation in HTML, CSS, JavaScript, React and a little bit of Redux. 
             </p>
             <p
               style={{
@@ -35,7 +37,7 @@ const About = () => {
                 fontSize: "16px",
               }}
             >
-              Lorem Ipsum Description text
+              I am constantly expanding my skills and exploring new technologies to stay up-to-date in the ever-evolving field of web development.
             </p>
           </div>
         </div>
@@ -44,9 +46,12 @@ const About = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            alignSelf: "center",
+            
           }}
         >
-          <img src={image} />
+          <img style = {{maxWidth: "100%", 
+            maxHeight: '450px',}} src={image} />
         </div>
       </div>
     </section>

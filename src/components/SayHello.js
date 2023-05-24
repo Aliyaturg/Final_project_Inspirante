@@ -12,8 +12,8 @@ const SayHello = (props) => {
         <div className="contacts">
           <h1>Say Hello</h1>
           <p style={{ maxWidth: "500px" }}>
-            Feel free to contact with me using the contact info below. Let's create together
-            something amazing!
+          If you have any questions or would like to discuss potential collaborations, please don't hesitate to reach out. 
+          Feel free to contact with me using the contact info below. 
           </p>
           <button className="button" onClick={handleModal}>
             Get In Touch

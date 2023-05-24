@@ -18,7 +18,7 @@ const Component1 = () => {
           I build things for the web.
         </h1>
         <p style={{ marginTop: "20px" }}>
-          I’m Frontend Developer and this is my portfolio.
+          I’m a beginner Web Developer and this is my portfolio.
         </p>
         <button
           style={{ marginTop: "20px" }}
