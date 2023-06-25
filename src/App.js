@@ -1,12 +1,12 @@
 
 import "./App.css";
-import About from "./components/About";
+import GetStarted from "./components/Get Started";
 import SayHello from "./components/SayHello";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Component1 from "./components/Component1";
-import Projects from "./components/Projects";
+import Categories  from "./components/Categories ";
 import React, { useState } from "react";
 
 function App() {
@@ -21,9 +21,8 @@ function App() {
     <div className="App">
       <Header />
       <Component1 />
-      <About />
-      <Experience />
-      <Projects />
+      <GetStarted />
+      <Categories />
       <SayHello modal={modal} setModal={setModal} handleModal={handleModal}/>
       <Footer />
     </div>

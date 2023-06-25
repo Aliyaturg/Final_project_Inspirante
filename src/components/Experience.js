@@ -22,7 +22,7 @@ const Experience = () => {
     <section className="border-bottom" id="experience">
       <div className="experience">
         <h1 style={{ paddingTop: "100px", paddingBottom: "100px" }}>
-          Experience
+          Questions
         </h1>
         <div>
           {experienceJobs.map((el) => {

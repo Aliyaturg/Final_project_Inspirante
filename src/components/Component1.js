@@ -1,34 +1,51 @@
-import React from "react";
-import myCV from "../assets/CV_Aliya_Turg.pdf";
+import React, { useState, useEffect } from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import image1 from "../assets/motiv1.jpg";
+import image2 from "../assets/motiv.jpg";
+import image3 from "../assets/motiv5.jpg";
+
 
 const Component1 = () => {
-  const download = () => {
-    const link = document.createElement("a");
-    link.href = myCV;
-    link.download = "myCV.pdf";
-    link.click();
-  };
+  const [currentImage, setCurrentImage] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const images = [
+    image1,
+    image2,
+    image3,
+  ];
+  const texts = [
+    "Have you ever experienced challenges or obstacles while pursuing your goals?",
+    "Are you looking for an extra boost of motivation to help you achieve your goals?",
+    "Look no further! Introducing Inspirante, the ultimate web application designed to ignite your inner drive and keep you focused on your path to success.",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [images.length]);
+
+  useEffect(() => {
+    setCurrentText(texts[currentImage]);
+  }, [currentImage]);
 
   return (
-    <section className="hero">
-      <div className="container">
-        <h1>
-          Hi, I’m Aliya,
-          <br />
-          I build things for the web.
-        </h1>
-        <p style={{ marginTop: "20px" }}>
-          I’m a beginner Web Developer and this is my portfolio.
-        </p>
-        <button
-          style={{ marginTop: "20px" }}
-          className="button"
-          onClick={download}
+    <div className="component1-start">
+      <TransitionGroup>
+        <CSSTransition
+          key={currentImage}
+          timeout={500}
+          classNames="fade"
         >
-          Check out my CV
-        </button>
-      </div>
-    </section>
+          <img className="images-start" src={images[currentImage]} alt="Carousel" />
+        </CSSTransition>
+      </TransitionGroup>
+      <p className="para-text">{currentText}</p>
+    </div>
   );
 };
 

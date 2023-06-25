@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/imageAboutMe.png";
+import image from "../assets/motiv2.jpg";
 
 const About = () => {
   return (
@@ -12,32 +12,33 @@ const About = () => {
             justifyContent: "center",
           }}
         >
-          <h1>About me</h1>
-          <p style={{ width: "629px" }}>
-            Hi, I'm Aliya. I'm beginner Web Developer. 
+          <h1>About App</h1>
+          <p style={{ width: "850px",
+          fontSize: "32px",
+        }}>
+          Inspirante - it's your dedicated companion on your journey towards personal growth and achievement.
 
           </p>
 
           <div style={{ display: "flex", flexDirection: "column" }}>
             <p
               style={{
-                maxWidth: "500px",
-                fontFamily: "Inter",
+                maxWidth: "850px",
                 fontWeight: 300,
-                fontSize: "16px",
+                fontSize: "32px",
               }}
-            > I am a passionate and aspiring web developer with a strong desire to create engaging and user-friendly websites. 
-            With a solid foundation in HTML, CSS, JavaScript, React and a little bit of Redux. 
+            > Are you looking for an extra boost of motivation to help you achieve your goals? Look no further! 
+            Introducing Inspirante, the ultimate web application designed to ignite your inner drive and keep you focused on your path to success.
+            
             </p>
             <p
               style={{
-                maxWidth: "500px",
-                fontFamily: "Inter",
+                maxWidth: "850px",
                 fontWeight: 300,
-                fontSize: "16px",
+                fontSize: "32px",
               }}
             >
-              I am constantly expanding my skills and exploring new technologies to stay up-to-date in the ever-evolving field of web development.
+              With its intuitive interface and powerful features, Inspirante empowers you to stay motivated, overcome obstacles, and reach new heights.
             </p>
           </div>
         </div>
@@ -47,11 +48,12 @@ const About = () => {
             flexDirection: "column",
             justifyContent: "center",
             alignSelf: "center",
+            width:"850px"
             
           }}
         >
           <img style = {{maxWidth: "100%", 
-            maxHeight: '450px',}} src={image} />
+            maxHeight: '600px',}} src={image} />
         </div>
       </div>
     </section>
