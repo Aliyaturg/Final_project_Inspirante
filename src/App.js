@@ -2,12 +2,15 @@
 import "./App.css";
 import GetStarted from "./components/Get Started";
 import SayHello from "./components/SayHello";
-import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Component1 from "./components/Component1";
 import Categories  from "./components/Categories ";
 import React, { useState } from "react";
+import MyChatComponent from "./components/MyChatComponent";
+
+
+
 
 function App() {
  
@@ -23,6 +26,7 @@ function App() {
       <Component1 />
       <GetStarted />
       <Categories />
+      <MyChatComponent />
       <SayHello modal={modal} setModal={setModal} handleModal={handleModal}/>
       <Footer />
     </div>
